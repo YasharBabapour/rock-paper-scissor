@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    
+
+
+    <div class="container">
+        <div class="playerSide playerOneSide">
+            <h2>Player 1</h2>
+            <div class="itemImage">
+                <img src="" alt="" class="playerOneItem" id="playerOneItem">
+            </div>
+            <button class="playerBtn playerBtn1" onclick="playingFunction('playerOne')" id="playerOneBtn">Play</button>
+
+
+
+        </div>
+
+        <div class="results">
+            <div class="playersScores">
+                
+                <h3 id="playerOneScore">Player 1 = 0</h3>
+                <h3 id="playerTwoScore">Player 2 = 0</h3>
+            </div>
+            <div class="winner">
+                <h2 id="winner"></h2>
+            </div>
+            <div class="newGame">
+                <button class="newGameBtn" onclick="newGameFunction()">New Game</button>
+            </div>
+        </div>
+
+
+        <div class="playerSide playerTwoSide">
+            <h2>Player 2</h2>
+            <div class="itemImage">
+                <img src="" alt="" class="playerTwoItem" id="playerTwoItem">
+            </div>
+            <button class="playerBtn playerBtn2" onclick="playingFunction('playerTwo')" id="playerTwoBtn" disabled>Play</button>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
